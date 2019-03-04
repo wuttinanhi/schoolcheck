@@ -1,0 +1,91 @@
+{
+  "rules":{
+    "checkin":{
+      ".read": true,
+      "ALL_CLASS":{
+        ".read": true,
+        ".write": true
+      },
+      "MAC_KEY":{
+        ".read": true,
+        ".write": true
+      },
+      "QRCODE_KEY":{
+        ".read": true,
+        ".write": true
+      },
+      "TEACHER_PWD":{
+        ".read": true,
+        ".write": true
+      },
+      "data":{
+        "$year":{
+          "$month":{
+            "$day":{
+              "$class":{
+                "$student_id":{
+                  "$any":{
+                    ".read": true,
+                    ".write": "!data.exists()"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "report":{
+      	"$year":{
+        	"$month":{
+          	 "$student_id":{
+                     ".read": true,
+            		"$any":{
+                          ".read": true,
+                  	  ".write": true
+                  }
+              }
+           }
+         }
+      },
+      "time":{
+        "$year":{
+          "$month":{
+            "$day":{
+              "$class":{
+                "$student_id":{
+                   ".read": true,
+        	   ".write": "!data.exists()"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "class":{
+      ".read": true,
+      "$class_id":{
+          ".read": true,
+          ".write": "!data.exists()"
+        }
+    },
+      "classroom":{
+      ".read": true,
+      "$class_id":{
+          ".read": true,
+          ".write": "!data.exists()"
+        }
+    },
+    "student":{
+       ".read": true,
+      "$student_id":{
+         ".read": true,
+         ".write": true,
+      "$name":{
+          ".read": true,
+          ".write": true
+        }
+      }
+    }
+	}
+}

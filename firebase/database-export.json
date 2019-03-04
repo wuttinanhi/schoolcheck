@@ -1,0 +1,53 @@
+{
+  "checkin" : {
+    "ALL_CLASS" : {
+	  "101" : "M. 1/1",
+	  "204" : "M. 2/4",
+      "303" : "M. 3/3",
+      "401" : "M. 4/1",
+      "502" : "M. 5/2",
+      "601" : "M. 6/1"
+    },
+    "MAC_KEY" : "\"AA:11:22:33:BB:11\"",
+    "QRCODE_KEY" : "QRCODE_CHECKIN_KEY",
+    "TEACHER_PWD" : "TEACHER_APP_PASSWORD",
+    "data" : {
+      "2018" : {
+        "11" : {
+          "08" : {
+			"303" : {
+				"11111" : {
+					"location" : "\"กรุงเทพมหานคร 10600 ประเทศไทย\\n\"",
+					"pic" : "\"PATH_IMAGE_URL\"",
+					"status" : "\"Late\"",
+					"time" : "\"09:13:35\""
+				},
+				"22222" : {
+					"location" : "\"กรุงเทพมหานคร 10600 ประเทศไทย\\n\"",
+					"pic" : "\"PATH_IMAGE_URL\"",
+					"status" : "\"Late\"",
+					"time" : "\"08:17:42\""
+				}
+			}
+		 }
+      }
+    }
+  },
+  "class" : {
+    "303" : "\"NAME,NAME,NAME\"",
+    "502" : "\"NAME,NAME,NAME\""
+  },
+  "classroom" : {
+    "303" : "(11111)(22222)(33333)",
+    "401" : "(11111)(22222)(33333)"
+  },
+  "student" : {
+    "11111" : {
+      "name" : "\"FIRSTNAME LASTNAME\""
+    },
+    "22222" : {
+      "name" : "\"FIRSTNAME LASTNAME\""
+    }
+  }
+}
+}
